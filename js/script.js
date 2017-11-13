@@ -23,3 +23,9 @@ $("#slidingDownHeight").on("click", function() {
 	/* You can customize your own animation with .animate() */
 	$(".outer").animate({height: '300px'}, 'slow');
 });
+
+$("#slidingUpDownHeight").on("click", function() {
+    /* You can chain animations such that they appear sequentially */
+    $(".outer").animate({height: "20px"}, "slow")
+               .animate({height: "50px"}, "slow");
+});
